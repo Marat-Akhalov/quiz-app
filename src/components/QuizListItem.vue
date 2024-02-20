@@ -1,4 +1,6 @@
 <script setup>
+import { defineProps, toRefs } from 'vue';
+
 const props = defineProps({
   name: {
     type: String,
@@ -14,7 +16,7 @@ const props = defineProps({
   }
 })
 
-const { name, imgPath, questions } = props
+const { name, imgPath, questions } = toRefs(props)
 </script>
 
 <template>

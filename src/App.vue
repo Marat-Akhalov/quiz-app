@@ -2,11 +2,13 @@
 import { ref } from 'vue'
 import q from '@/data/data.json'
 
+import QuizList from '@/components/QuizList.vue';
+
 const quizes = ref(q)
 </script>
 
 <template>
-  <h2>Quiz App</h2>
+  <QuizList :quizes="quizes" />
 </template>
 
 <style>
