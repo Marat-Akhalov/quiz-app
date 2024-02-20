@@ -23,3 +23,11 @@ const { quizes } = toRefs(props)
       :questions="quiz.questions" />
   </ul>
 </template>
+
+<style scoped>
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+</style>

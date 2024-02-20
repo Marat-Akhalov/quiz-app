@@ -33,3 +33,20 @@ const { name, imgPath, questions } = toRefs(props)
     </li>
   </base-card>
 </template>
+
+<style scoped>
+.list__item {
+  max-width: 300px;
+  cursor: pointer;
+}
+
+.list__img {
+  width: 100%;
+  min-height: 190px;
+  object-fit: cover;
+}
+
+.list__text-wrap {
+  padding: 20px;
+}
+</style>
